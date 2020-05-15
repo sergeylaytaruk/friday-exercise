@@ -1,11 +1,11 @@
 {
-    "name": "otis22/php-skelleton",
+    "name": "sergeylaytaruk/php-skelleton",
     "description": "Php skelleton for write high quality code",
     "license": "MIT",
     "authors": [
         {
-            "name": "otis",
-            "email": "pro100print@yahoo.com"
+            "name": "sergeylaytaruk",
+            "email": "sergey.laytaruk@gmail.com"
         }
     ],
     "require-dev": {
@@ -18,12 +18,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Otis22\\FridayExercise\\": "src"
+            "Otis22\\PhpSkelleton\\": "src",
+            "packagetest\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Otis22\\FridayExercise\\Tests\\": "tests"
+            "Otis22\\PhpSkelleton\\Tests\\": "tests",
+            "packagetest\\Tests\\": "tests"
         }
     }
 }

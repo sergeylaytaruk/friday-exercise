@@ -4,10 +4,12 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/7.1/phpunit.xsd"
         bootstrap="./vendor/autoload.php"
-        colors="true">
+        colors="true"
+        cacheResult="false"
+>
     <testsuites>
         <testsuite name="main">
-            <directory>./tests</directory>
+            <directory suffix=".php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>

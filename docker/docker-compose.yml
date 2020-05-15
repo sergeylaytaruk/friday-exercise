@@ -3,7 +3,7 @@ services:
 
     php-cli:
       build: phpdocker/php-cli
-      container_name: friday-exercise
+      container_name: php-skelleton
       working_dir: /application
       volumes:
         - ..:/application
