@@ -10,6 +10,9 @@ use PHPUnit\Framework\TestCase;
 class TestSortarray extends TestCase
 {
 
+    /**
+     * @var array<int, int>
+     */
     private $arrayTest = [];
 
     public function setUp(): void

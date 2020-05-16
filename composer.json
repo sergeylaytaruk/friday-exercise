@@ -19,13 +19,15 @@
     "autoload": {
         "psr-4": {
             "Otis22\\PhpSkelleton\\": "src",
-            "packagetest\\": "src"
+            "packagetest\\": "src",
+            "Otis22\\FridayExercise\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Otis22\\PhpSkelleton\\Tests\\": "tests",
-            "packagetest\\Tests\\": "tests"
+            "packagetest\\Tests\\": "tests",
+            "Otis22\\FridayExercise\\Tests\\": "tests"
         }
     }
 }

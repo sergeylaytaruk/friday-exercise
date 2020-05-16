@@ -7,28 +7,18 @@ namespace packagetest;
 class JoinedString
 {
     /**
-     * @var \Traversable<int,int>
-     */
-    protected $traversable;
-    /**
      * @var string
      */
-    protected $concatenatedString  = '';
-
-    /**
-     * @var string
-     */
-    protected $glue;
+    private $concatenatedString  = '';
 
     /**
      * JoinedString constructor.
      * @param string $glue
-     * @param \Traversable $iterator
+     * @param array<mixed> $data
      */
-    public function __construct(string $glue, \Traversable $iterator)
+    public function __construct(string $glue, array $data)
     {
-        $this->traversable = $iterator;
-        $this->glue = $glue;
+        $this->concatenatedString = join($glue, $data);
     }
 
     /**
@@ -36,14 +26,6 @@ class JoinedString
      */
     public function __toString(): string
     {
-        if (empty($this->concatenatedString)) {
-            foreach ($this->traversable as $inx => $value) {
-                if ($inx != 0 && $inx < count($this->traversable)) {
-                    $this->concatenatedString .= $this->glue;
-                }
-                $this->concatenatedString .= $value;
-            }
-        }
         return $this->concatenatedString;
     }
 }

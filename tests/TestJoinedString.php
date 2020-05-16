@@ -9,14 +9,6 @@ class TestJoinedString extends TestCase
 {
     public function testJoinedString(): void
     {
-        $this->assertEquals(
-            "1|2|3",
-            strval(
-                new JoinedString(
-                    "|",
-                    new \ArrayIterator([1, 2, 3])
-                )
-            )
-        );
+        $this->assertEquals("1|2|3", strval(new JoinedString("|", [1, 2, 3])));
     }
 }
