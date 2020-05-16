@@ -1,7 +1,7 @@
 # php skelleton
 Skelleton for write high quality php application
 
-![Build Status](https://github.com/otis22/php-skelleton/workflows/CI/badge.svg)
+![Build Status](https://github.com/sergeylaytaruk/friday-exercise/workflows/CI/badge.svg)
 
 ## Local work
 
